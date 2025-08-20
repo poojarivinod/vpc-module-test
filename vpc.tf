@@ -8,4 +8,5 @@ module "vpc" {
     public_subnet_cidrs = var.public_subnet_cidrs
     private_subnet_cidrs = var.private_subnet_cidrs
     database_subnet_cidrs = var.database_subnet_cidrs
+    is_pairing_required = true # it override the default information of false
 }
