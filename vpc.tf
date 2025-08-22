@@ -1,6 +1,6 @@
 module "vpc" {
     # source = "../terraform-aws-vpc" #for testing , once completed use below source
-    source = "git::https://github.com/poojarivinod/terraform-aws-vpc.git?ref=main" # how to refer git terraform module --> stack overflow # if error do "terraform init -reconfigure"
+    source = "git::https://github.com/poojarivinod/terraform-aws-vpc.git?ref=main" # how to refer git terraform module --> stack overflow # if error, do "terraform init -reconfigure" # still error then, comment this source and  use above source and then come back to this source  
     project_name = var.project_name
     environment = var.environment
     vpc_cidr = var.vpc_cidr
